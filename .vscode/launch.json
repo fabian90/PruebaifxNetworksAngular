@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:4200",
+            "webRoot": "${workspaceFolder}/ifxNetworks-app/src",
+            "sourceMaps": true,
+            "trace": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run Angular App",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "start"
+            ],
+            "port": 4200,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "cwd": "${workspaceFolder}/ifxNetworks-app/src",
+            "sourceMaps": true,
+            "trace": true
+        }
+    ]
+}

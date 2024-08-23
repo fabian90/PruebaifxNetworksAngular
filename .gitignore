@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+
+# Compiled output
+dist/
+out-tsc/
+
+# Angular specific files
+.angular/
+src/**/*.js
+src/**/*.js.map
+src/**/*.d.ts
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+*.env
+
+# NPM logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+
+# Build output
+build/
+
+# Other
+*.tgz

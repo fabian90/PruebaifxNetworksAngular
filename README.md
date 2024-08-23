@@ -8,7 +8,27 @@
 
 La estructura del proyecto es la siguiente:
 
-ifxNetworks-app/ │ ├── src/ │ ├── app/ │ │ ├── components/ # Componentes reutilizables │ │ ├── models/ # Modelos de datos (DTOs) │ │ ├── services/ # Servicios para manejar la lógica de negocio │ │ ├── guards/ # Guards para la protección de rutas │ │ ├── pipes/ # Pipes personalizados │ │ ├── app.module.ts # Módulo principal de la aplicación │ │ └── app-routing.module.ts # Configuración de rutas │ │ │ ├── assets/ # Recursos estáticos (imágenes, estilos) │ ├── environments/ # Archivos de configuración de entorno │ ├── index.html # Archivo HTML principal │ ├── styles.css # Estilos globales │ └── main.ts # Archivo de entrada de la aplicación │ ├── angular.json # Configuración de Angular ├── package.json # Dependencias y scripts de NPM └── README.md # Este archivo
+ifxNetworks-app/
+│
+├── src/
+│   ├── app/
+│   │   ├── components/                # Componentes reutilizables
+│   │   ├── models/                    # Modelos de datos (DTOs)
+│   │   ├── services/                  # Servicios para manejar la lógica de negocio
+│   │   ├── guards/                    # Guards para la protección de rutas
+│   │   ├── pipes/                     # Pipes personalizados
+│   │   ├── app.module.ts              # Módulo principal de la aplicación
+│   │   └── app-routing.module.ts      # Configuración de rutas
+│   │
+│   ├── assets/                         # Recursos estáticos (imágenes, estilos)
+│   ├── environments/                   # Archivos de configuración de entorno
+│   ├── index.html                     # Archivo HTML principal
+│   ├── styles.css                     # Estilos globales
+│   └── main.ts                        # Archivo de entrada de la aplicación
+│
+├── angular.json                        # Configuración de Angular
+├── package.json                        # Dependencias y scripts de NPM
+└── README.md                           # Este archivo
 
 ## Patrones de Diseño Utilizados
 
@@ -31,6 +51,7 @@ Para ejecutar la aplicación, sigue estos pasos:
 1. **Instalar Dependencias**:
    Asegúrate de tener [Node.js](https://nodejs.org/) y [Angular CLI](https://angular.io/cli) instalados. Luego, abre una terminal y navega hasta la carpeta del proyecto:
 
-   ```bash
+   git clone https://github.com/fabian90/PruebaifxNetworksAngular.git
+   cd ifxNetworks
    cd ifxNetworks-app
    npm install

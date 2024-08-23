@@ -42,3 +42,6 @@ build/
 
 # Other
 *.tgz
+
+# Local Netlify folder
+.netlify

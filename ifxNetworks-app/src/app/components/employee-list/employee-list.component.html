@@ -1,0 +1,34 @@
+<div>
+    <h2>Lista de Empleados</h2>
+    <button *ngIf="authService.isAdmin()" (click)="navigateToCreate()">Crear Nuevo Empleado</button>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Empresa</th>
+          <th>Teléfono</th> <!-- Columna para Teléfono -->
+          <th>Cargo</th>    
+          <th>Activo</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.firstName }}</td>
+          <td>{{ employee.lastName }}</td>
+          <td>{{ employee.entityName }}</td>
+          <td>{{ employee.phone }}</td> <!-- Muestra el teléfono -->
+          <td>{{ employee.position }}</td>  
+          <td>{{ employee.isActive ? 'Sí' : 'No' }}</td>
+          <td>
+            <button *ngIf="authService.isAdmin()"(click)="editEmployee(employee.id)">Editar</button>
+            <button *ngIf="authService.isAdmin()" (click)="deleteEmployee(employee.id)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

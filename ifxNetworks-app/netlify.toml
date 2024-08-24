@@ -1,0 +1,12 @@
+[build]
+  # Comando de construcción que Netlify usará
+  command = "npm run build"
+
+  # Directorio donde Netlify buscará los archivos generados después de la compilación
+  publish = "dist/ifxNetworks-app" # Cambia esto si tu directorio de salida es diferente
+
+# Opcional: Si estás utilizando redirecciones o configuración específica de tu aplicación
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

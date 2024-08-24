@@ -2,8 +2,12 @@
 node_modules/
 
 # Compiled output
-dist/
-out-tsc/
+/dist
+/tmp
+/out-tsc
+/aot
+/es5
+/es2015
 
 # Angular specific files
 .angular/
